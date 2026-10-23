@@ -79,22 +79,3 @@ expense-tracker/
 Status
 Personal portfolio project. Developed to practice Django, database integration, CRUD operations, filtering, and frontend development.
 '@ | Set-Content -Encoding utf8 README.md
-
-## Шаг 2. Создаём `.env.example`
-
-Выполни следующий блок:
-
-```powershell
-@'
-# Django configuration
-SECRET_KEY=replace-with-a-local-secret-key
-DEBUG=True
-ALLOWED_HOSTS=127.0.0.1,localhost
-
-# PostgreSQL configuration
-DB_NAME=expense_tracker
-DB_USER=expense_user
-DB_PASSWORD=replace-with-your-local-database-password
-DB_HOST=localhost
-DB_PORT=5432
-'@ | Set-Content -Encoding utf8 .env.example
